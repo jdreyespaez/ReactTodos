@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var ReactFire = require('reactfire');
 var Firebase = require('firebase');
+var Header = require('./header');
 var rootUrl = 'https://scorching-inferno-6761.firebaseio.com/';
 
 var App = React.createClass({
@@ -17,6 +18,7 @@ var App = React.createClass({
         <h2 className="text-center">
           Lista de Tareas
         </h2>
+        <Header />
       </div>
     </div>
   }
