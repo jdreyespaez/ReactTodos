@@ -28,6 +28,7 @@ var App = React.createClass({
           Lista de Tareas
         </h2>
         <Header itemStore={this.firebaseRefs.items} />
+        <hr />
         <div className={"content " + (this.state.loaded ? 'loaded' : '')}>
           <List items={this.state.items} />
         </div>
