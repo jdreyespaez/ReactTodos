@@ -10,7 +10,7 @@ module.exports = React.createClass({
   },
   renderList: function() {
     // The first condition is to check if the array is empty
-    if(this.props.items && Object.keys(this.props.items).length === 0) {
+    if(!this.props.items) {
       return <h4>
         Agrega una tarea.
       </h4>
