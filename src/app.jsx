@@ -18,7 +18,7 @@ var App = React.createClass({
         <h2 className="text-center">
           Lista de Tareas
         </h2>
-        <Header />
+        <Header itemStore={this.firebaseRefs.items} />
       </div>
     </div>
   }
